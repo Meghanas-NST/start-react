@@ -1,41 +1,22 @@
 ## 1. What happens between typing a URL and seeing the page?
 
-When I enter a URL in the browser, the browser identifies the
-destination server and uses DNS to resolve the domain name to an IP
-address if necessary.
-
-The browser establishes a connection to the server and sends an HTTP
-request. The server returns an HTTP response containing a status code
-and, for a successful page request, usually HTML.
-
-The browser parses the HTML and discovers resources such as CSS,
-JavaScript, and images. It fetches the required resources, builds the
-page structure, calculates layout, and paints the page on the screen.
+The browser finds the server using DNS.
+The browser sends a request to the server.
+The server sends back a response containing the webpage.
+The browser reads the HTML, CSS, and JavaScript.
+The browser displays the webpage on the screen.
 
 ## 2. What is the difference between padding and margin?
 
-Padding is the space between an element's content and its border.
+Padding: The space inside an element, between its content and border.
 
-Margin is the space outside an element's border, separating it from
-neighboring elements.
-
-In my project, I use padding inside employee cards to create space
-around their content. I use margin to create space between sections
-and headings.
+Margin: The space outside an element, between it and other elements.
 
 ## 3. When should I use Flexbox and when should I use Grid?
 
-Flexbox is useful for arranging items along one primary axis, either
-a row or a column.
+**Flexbox:** Used to arrange elements in a row or column. In my project, I use Flexbox to arrange the header title and navigation.
 
-I use Flexbox for the header because it arranges the page title and
-navigation and distributes space between them.
-
-CSS Grid is useful for two-dimensional layouts involving rows and
-columns.
-
-I use Grid for the employee cards because I need three columns on
-desktop and one column on mobile.
+**Grid:** Used to arrange elements in rows and columns. In my project, I use Grid to display employee cards in 3 columns on desktop and 1 column on mobile.
 
 ## 4. Why use <label for>?
 
@@ -62,4 +43,3 @@ unexpected condition that prevented it from fulfilling the request.
 A 404 usually indicates that the requested resource could not be
 found, while a 500 indicates a server-side failure.
 
-The explanations are ready to use, but make sure you understand them well enough to explain them without reading the file.
