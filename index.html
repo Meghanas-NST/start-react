@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Directory</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Employee Directory</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="#employees">Employees</a>
+            <a href="#employee-table">Employee Table</a>
+            <a href="#add-employee">Add Employee</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Employee Cards -->
+        <section id="employees">
+            <h2>Our Employees</h2>
+
+            <div class="employee-grid">
+
+                <article class="employee-card">
+                    <h3>Rahul Sharma</h3>
+                    <p>Department: Engineering</p>
+                    <p>Email: rahul@example.com</p>
+                </article>
+
+                <article class="employee-card">
+                    <h3>Priya Patel</h3>
+                    <p>Department: Design</p>
+                    <p>Email: priya@example.com</p>
+                </article>
+
+                <article class="employee-card">
+                    <h3>Arjun Kumar</h3>
+                    <p>Department: Marketing</p>
+                    <p>Email: arjun@example.com</p>
+                </article>
+
+                <article class="employee-card">
+                    <h3>Neha Reddy</h3>
+                    <p>Department: Human Resources</p>
+                    <p>Email: neha@example.com</p>
+                </article>
+
+                <article class="employee-card">
+                    <h3>Vikram Singh</h3>
+                    <p>Department: Finance</p>
+                    <p>Email: vikram@example.com</p>
+                </article>
+
+                <article class="employee-card">
+                    <h3>Ananya Das</h3>
+                    <p>Department: Engineering</p>
+                    <p>Email: ananya@example.com</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Employee Table -->
+        <section id="employee-table">
+            <h2>Employee Details</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Department</th>
+                        <th scope="col" class="salary">Salary</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Rahul Sharma</td>
+                        <td>Engineering</td>
+                        <td class="salary">₹75,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Priya Patel</td>
+                        <td>Design</td>
+                        <td class="salary">₹65,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Arjun Kumar</td>
+                        <td>Marketing</td>
+                        <td class="salary">₹55,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Neha Reddy</td>
+                        <td>Human Resources</td>
+                        <td class="salary">₹60,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vikram Singh</td>
+                        <td>Finance</td>
+                        <td class="salary">₹70,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ananya Das</td>
+                        <td>Engineering</td>
+                        <td class="salary">₹80,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Add Employee Form -->
+        <section id="add-employee">
+            <h2>Add Employee</h2>
+
+            <form>
+                <div class="form-group">
+                    <label for="employee-name">Full Name</label>
+                    <input
+                        type="text"
+                        id="employee-name"
+                        name="employeeName"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="employee-email">Email</label>
+                    <input
+                        type="email"
+                        id="employee-email"
+                        name="employeeEmail"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="employee-department">Department</label>
+                    <input
+                        type="text"
+                        id="employee-department"
+                        name="employeeDepartment"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="employee-salary">Salary</label>
+                    <input
+                        type="number"
+                        id="employee-salary"
+                        name="employeeSalary"
+                        min="0"
+                        required
+                    >
+                </div>
+
+                <button type="submit">Add Employee</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Employee Directory</p>
+    </footer>
+
+</body>
+</html>
